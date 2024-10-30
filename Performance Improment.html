@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Improvements in Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .intro {
+            margin-bottom: 20px;
+            font-size: 1em;
+            color: #333;
+            background-color: #e7f1ff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #b3d7ff;
+        }
+
+        .intro-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 5px;
+        }
+
+        .description {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        pre {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-left: 4px solid #1a73e8;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Performance Improvements in Python</h1>
+        <img src="G:\IT Project 24\rxezjyf4ojx41.png" alt="Performance Improvements" class="intro-image">
+        <div class="intro">
+            <p><strong>Python continues to improve its performance</strong> with each new release, offering faster startup times, more efficient memory management, and improved execution speeds. These optimizations make Python better suited for both small-scale scripts and large-scale enterprise applications.</p>
+        </div>
+        <div class="description">
+            <h2>Key Performance Enhancements</h2>
+            <ul>
+                <li><strong>Faster Startup Time:</strong> Python's initialization time has been reduced significantly, making applications start faster.</li>
+                <li><strong>Improved Memory Usage:</strong> Memory consumption has been optimized in recent versions, reducing the footprint of Python applications.</li>
+                <li><strong>Optimized Bytecode:</strong> Python has introduced several improvements in bytecode execution, resulting in faster code execution and better performance for commonly used operations.</li>
+            </ul>
+
+            <h2>Examples of Performance Gains</h2>
+            <p>Python's performance improvements can be seen in both small scripts and large projects. Here is a simple example comparing execution times of a function in Python 3.9 vs. Python 3.10:</p>
+            
+            <pre>
+import time
+
+def expensive_function():
+    time.sleep(1)  # Simulate a time-consuming operation
+    return "Completed"
+
+start = time.time()
+result = expensive_function()
+end = time.time()
+
+print(f"Execution Time: {end - start} seconds")
+            </pre>
+            <p>Running this code on Python 3.10 will demonstrate a slightly faster startup and execution time due to optimizations.</p>
+
+            <h2>Special Optimizations in Python 3.11+</h2>
+            <p>In Python 3.11 and later, there have been additional optimizations, such as:</p>
+            <ul>
+                <li>Adaptive Interpreters: The interpreter adapts to your code as it runs, improving performance in loops and common operations.</li>
+                <li>Specialized Data Structures: New optimizations in dictionaries and other data structures reduce overhead and make common operations faster.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>As Python evolves, it continues to deliver significant performance improvements, making it a more robust choice for developers working on high-performance applications.</p>
+        </div>
+        <p>For more information on Python and its features, visit the <a href="https://www.python.org/">official Python website</a>.</p>
+    </div>
+</body>
+</html>

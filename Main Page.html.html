@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Features in Python</title>
+    
+    <!-- SEO Enhancements -->
+    <meta name="description" content="Discover the new and exciting features in Python including pattern matching, type hinting, and performance improvements.">
+    <meta name="keywords" content="Python, programming, features, type hinting, performance, pattern matching">
+    <meta property="og:title" content="New Features in Python">
+    <meta property="og:description" content="Learn about the latest updates in Python, including pattern matching and type hinting enhancements.">
+    <meta property="og:type" content="website">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeInPage 1.5s forwards;
+            transition: background-color 0.3s ease;
+        }
+
+        @keyframes fadeInPage {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover { color: #1a73e8; }
+
+        .intro {
+            margin-bottom: 20px;
+            font-size: 1em;
+            color: #333;
+            background-color: #e7f1ff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #b3d7ff;
+            opacity: 0;
+            animation: fadeInSection 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeInSection {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .topics {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .topic {
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #e7f1ff;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .topic:hover {
+            transform: scale(1.05);
+            background-color: #cce5ff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .description { margin-top: 5px; font-size: 0.9em; color: #555; }
+
+        /* Lazy Loading for images */
+        .intro-image {
+            width: 150px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+            transition: transform 0.5s ease-in-out;
+            loading: lazy;
+        }
+
+        .intro-image:hover { transform: scale(1.2) rotate(5deg); }
+
+        .testimonial {
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            opacity: 0;
+            animation: fadeInTestimonial 1s forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeInTestimonial {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ccc;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #backToTop.visible { opacity: 1; }
+
+        /* Dark Mode Styles */
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dark-mode .container { background-color: #444; }
+        .dark-mode footer { background-color: #222; }
+
+        /* Chart styling */
+        .chart-container {
+            margin: 40px auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>New Features in Python</h1>
+        <div class="intro">
+            <p><strong>Python is an evolving programming language</strong> that introduces features to enhance usability, performance, and code clarity.</p>
+        </div>
+
+        <ul class="topics">
+            <li class="topic">
+                <a href="D:\IT Project 24\Pattern Matching.html">
+                    <img src="D:\IT Project 24\rxezjyf4ojx41.webp" alt="Pattern Matching" class="intro-image">
+                </a>
+                <div>
+                    <strong>1. Pattern Matching</strong>
+                    <p class="description">Introduced in Python 3.10, pattern matching allows you to match data structures more easily. <a href="https://docs.python.org/3/whatsnew/3.10.html#pattern-matching" target="_blank">Read More</a></p>
+                </div>
+            </li>
+            <li class="topic">
+                <a href="D:\IT Project 24\Type Hinting Enhancements.html">
+                    <img src="D:\IT Project 24\rxezjyf4ojx41.webp" alt="Type Hinting" class="intro-image">
+                </a>
+                <div>
+                    <strong>2. Type Hinting Enhancements</strong>
+                    <p class="description">Python 3.9 and later provide more flexible type hinting. <a href="https://docs.python.org/3/whatsnew/3.9.html#type-hinting" target="_blank">Read More</a></p>
+                </div>
+            </li>
+            <li class="topic">
+                <a href="D:\IT Project 24\F-strings Improvements.html">
+                    <img src="D:\IT Project 24\rxezjyf4ojx41.webp" alt="F-strings" class="intro-image">
+                </a>
+                <div>
+                    <strong>3. F-strings Improvements</strong>
+                    <p class="description">F-strings in Python 3.8+ have improved syntax for easier debugging. <a href="https://docs.python.org/3/whatsnew/3.8.html#f-strings" target="_blank">Read More</a></p>
+                </div>
+            </li>
+            <li class="topic">
+                <a href="D:\IT Project 24\Performance Improvements.html">
+                    <img src="D:\IT Project 24\rxezjyf4ojx41.webp" alt="Performance Improvements" class="intro-image">
+                </a>
+                <div>
+                    <strong>4. Performance Improvements</strong>
+                    <p class="description">Each new version of Python includes optimizations. <a href="https://docs.python.org/3/whatsnew/3.9.html#optimizations" target="_blank">Read More</a></p>
+                </div>
+            </li>
+            <li class="topic">
+                <a href="D:\IT Project 24\Thank You Page.html"s>
+                    <img src="D:\IT Project 24\1600w-s3wBbwpk7Ck.webp" alt="Thank You" class="intro-image">
+                </a>
+                <div>
+                    <strong>5. Thank You for Visiting</strong>
+                    <p class="description">We appreciate your time and interest. Feel free to explore more!</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="testimonial">
+            <p>"Python is the future of programming!" - John Doe</p>
+        </div>
+
+        <!-- Chart.js implementation for visualizing data -->
+        <div class="chart-container">
+            <canvas id="pythonChart"></canvas>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Python Features. All Rights Reserved.</p>
+            <p>Follow us: <a href="https://twitter.com">Twitter</a> | <a href="https://facebook.com">Facebook</a> | <a href="https://github.com">GitHub</a></p>
+        </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <!-- Dark Mode Toggle Button -->
+    <button onclick="toggleDarkMode()" style="position: fixed; bottom: 70px; right: 20px; background-color: #1a73e8; color: white; border: none; padding: 10px 20px; border-radius: 5px;">Toggle Dark Mode</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Toggle Dark Mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        // Scroll to Top Functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show Back to Top button based on scroll position
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        };
+
+        // Chart.js for visualizing data
+        const ctx = document.getElementById('pythonChart').getContext('2d');
+        const pythonChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Pattern Matching', 'Type Hinting', 'F-strings', 'Performance'],
+                datasets: [{
+                    label: 'Feature Popularity',
+                    data: [70, 85, 90, 95],
+                    backgroundColor: ['#1a73e8', '#34a853', '#fbbc05', '#ea4335']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Python Feature Popularity'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

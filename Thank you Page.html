@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Visiting</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fullscreen 360° viewer */
+        #viewer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensures the viewer is behind the content */
+        }
+
+        /* Content container */
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 100px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent for readability */
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .thank-you-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+
+        /* QR code styling */
+        .qr-code-container {
+            margin-top: 20px;
+        }
+
+        .qr-code-container img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+
+    <!-- Photo Sphere Viewer CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photo-sphere-viewer/dist/photo-sphere-viewer.min.css">
+</head>
+<body>
+
+    <!-- 360° viewer for background -->
+    <div id="viewer"></div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Thank You for Visiting!</h1>
+        <p>We are truly grateful for your presence and support. Your visit means a lot to us and motivates us to keep pushing boundaries. A special thank you to all the parents for always being there with love, encouragement, and guidance.</p>
+        
+        <img src="D:\IT Project 24\1600w-s3wBbwpk7Ck.webp" alt="Thank You" class="thank-you-image"> <!-- Replace with appropriate image path -->
+
+        <p>We hope you found this project informative and enjoyable. Feel free to explore more, and we look forward to your continued support!</p>
+
+        <a href="G:\IT Project 24\Introduction Page.html" class="back-button">Back to Home</a>
+
+        <!-- QR Code -->
+        <div class="qr-code-container">
+            <p>Scan this QR code to visit us again!</p>
+            <img src="D:\IT Project 24\Untitled 1.png" alt="QR Code">
+        </div>
+    </div>
+
+    <!-- Photo Sphere Viewer JS -->
+    <script src="https://unpkg.com/photo-sphere-viewer/dist/photo-sphere-viewer.min.js"></script>
+
+    <script>
+        // Initialize the Photo Sphere Viewer for full background effect
+        const viewer = new PhotoSphereViewer.Viewer({
+            container: document.querySelector('#viewer'),
+            panorama: 'G:\\IT Project 24\\images.jfif', // Replace with your 360° image path
+            navbar: false, // Hide navigation bar for a cleaner background
+            defaultLat: 0.3, // Optional: Default latitude when loading
+            defaultZoomLvl: 50, // Optional: Zoom level to ensure a nice view
+            minFov: 30, // Control zoom level limits
+            maxFov: 90
+        });
+    </script>
+
+</body>
+</html>
